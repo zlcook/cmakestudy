@@ -1,0 +1,2 @@
+# cmakestudy
+study cmake
