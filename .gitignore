@@ -12,6 +12,24 @@ bin-release/
 *.air
 *.ipa
 *.apk
+*.bak
+
+.vs/*
+Debug/*
+Release/*
+CMakeFiles/*
+Win32/*
+
+#CMake
+**/CMakeCache.txt
+**/CMakeFiles
+**/CMakeScripts
+**/Testing
+**/Makefile
+**/cmake_install.cmake
+**/install_manifest.txt
+**/compile_commands.json
+**/CTestTestfile.cmake
 
 # Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
 # should NOT be excluded as they contain compiler settings and other important

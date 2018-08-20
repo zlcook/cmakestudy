@@ -1,0 +1,12 @@
+
+use  static library and shared library
+
+steps:
+#set env variable CMAKE_LIBRARY_PATH=/home/supdev/work/cmakestudy/installdir/lib
+export CMAKE_LIBRARY_PATH=/home/supdev/work/cmakestudy/installdir/lib 
+
+cd build
+# ָspecify the install prefix  direcoty by CMAKE_INSTALL_PREFIX
+cmake -DCMAKE_INSTALL_PREFIX=/home/supdev/work/cmakestudy/installdir ..
+make
+make install

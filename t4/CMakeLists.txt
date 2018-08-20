@@ -1,0 +1,10 @@
+cmake_minimum_required (VERSION 2.8)
+
+PROJECT(USELIB)
+
+#SET(CMAKE_C_FLAGS "-g -Wall")
+
+ADD_SUBDIRECTORY(src bin)
+
+INSTALL(FILES COPYRIGHT README DESTINATION share/doc/cmake/t4)
+

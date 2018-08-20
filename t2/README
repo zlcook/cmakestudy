@@ -1,0 +1,5 @@
+cd build
+# ָspecify the install prefix  direcoty by CMAKE_INSTALL_PREFIX
+cmake -DCMAKE_INSTALL_PREFIX=/home/supdev/work/cmakestudy/installdir ..
+make
+make install
