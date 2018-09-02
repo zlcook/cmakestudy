@@ -1,5 +1,22 @@
+# introduction
+* 1，为工程添加一个子目录 src，用来放置工程源代码;
+* 2，添加一个子目录 doc，用来放置这个工程的文档 hello.txt
+* 3，在工程目录添加文本文件 COPYRIGHT, README；
+* 4，在工程目录添加一个 runhello.sh 脚本，用来调用 hello 二进制
+* 6，将构建后的目标文件放入构建目录的 bin 子目录；
+* 7，最终安装这些文件：将 hello 二进制与 runhello.sh 安装至bin，将 doc 目录
+的内容以及 COPYRIGHT/README 安装到share/doc/cmake/t2，其中安装前缀目录通过CMAKE_INSTALL_PREFIX指定
+* 更多参考：[CMake-Practice--四，更好一点的 Hello World（13页）](http://sewm.pku.edu.cn/src/paradise/reference/CMake%20Practice.pdf)
+
+
+
+# 执行命令
+```
+cd t2
+mkdir build
 cd build
-# ָspecify the install prefix  direcoty by CMAKE_INSTALL_PREFIX
+// ָspecify the install prefix  direcoty by CMAKE_INSTALL_PREFIX
 cmake -DCMAKE_INSTALL_PREFIX=/home/supdev/work/cmakestudy/installdir ..
 make
 make install
+```

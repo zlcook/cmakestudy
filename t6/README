@@ -1,1 +1,12 @@
-how to define FindHELLO moudle and to use it
+# introduction
+* how to define FindHELLO moudle and to use it
+* 更多参考：[CMake-Practice--九，复杂的例子：模块的使用和自定义模块（45页）](http://sewm.pku.edu.cn/src/paradise/reference/CMake%20Practice.pdf)
+
+# 执行命令
+``
+cd t6
+mkdir -p build
+cd build
+cmake ..
+make
+```

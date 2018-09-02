@@ -1,4 +1,7 @@
+# 设置目标执行文件hello
 ADD_EXECUTABLE(hello main.c)
+# 设置目录执行文件编译后存放到${PROJECT_BINARY_DIR}/bin目录下，${PROJECT_BINARY_DIR}代表编译输出目录
 SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin)
 
+# 安装执行目标到bin目录下，安装前缀通过CMAKE_INSTALL_PREFIX指定
 INSTALL(TARGETS hello RUNTIME DESTINATION bin)

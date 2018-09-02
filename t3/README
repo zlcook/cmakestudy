@@ -1,8 +1,15 @@
-install static library and shared library
-steps:
+# introduction
+* 安装静态库和动态库
+* 更多参考：[CMake-Practice--五，静态库与动态库构建（20页）](http://sewm.pku.edu.cn/src/paradise/reference/CMake%20Practice.pdf)
 
+
+# 执行命令
+``
+cd t3
+mkdir -p build
 cd build
-# ָspecify the install prefix  direcoty by CMAKE_INSTALL_PREFIX
+// specify the install prefix  direcoty by CMAKE_INSTALL_PREFIX
 cmake -DCMAKE_INSTALL_PREFIX=/home/supdev/work/cmakestudy/installdir ..
 make
 make install
+```

@@ -1,1 +1,12 @@
- use FindCURL moudle
+# introduction
+* 使用FIND_PACKAGE查找第三方模块
+* 更多参考：[CMake-Practice--九，复杂的例子：模块的使用和自定义模块（43页）](http://sewm.pku.edu.cn/src/paradise/reference/CMake%20Practice.pdf)
+
+# 执行命令
+``
+cd t5
+mkdir -p build
+cd build
+cmake ..
+make
+```

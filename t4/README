@@ -1,12 +1,17 @@
+# introduction
+* 使用动态库和静态库（基于t3中安装的静态库和动态库）
+* 更多参考：[CMake-Practice--六，如何使用外部共享库和头文件（26页）](http://sewm.pku.edu.cn/src/paradise/reference/CMake%20Practice.pdf)
 
-use  static library and shared library
-
-steps:
+# 指令
+```
 #set env variable CMAKE_LIBRARY_PATH=/home/supdev/work/cmakestudy/installdir/lib
 export CMAKE_LIBRARY_PATH=/home/supdev/work/cmakestudy/installdir/lib 
 
+cd t4
+mkdir -p t4
 cd build
 # ָspecify the install prefix  direcoty by CMAKE_INSTALL_PREFIX
 cmake -DCMAKE_INSTALL_PREFIX=/home/supdev/work/cmakestudy/installdir ..
 make
 make install
+```
